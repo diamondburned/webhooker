@@ -1,0 +1,219 @@
+body {
+	background-color: #36393f;
+	color: #fefefe;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+#app {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+
+.control a {
+	cursor: pointer;
+}
+
+div.avatar {
+	background-image: url("https://discordapp.com/assets/0e291f67c9274a1abdddeb3fd919cbaa.png");
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	border-radius: 50%;
+}
+
+img.avatar {
+	max-width: 40px;
+	max-height: 40px;
+	height: auto;
+	width: auto;
+	border-radius: 50%;
+}
+
+div#controls {
+	width: 30vw;
+}
+
+.control {
+	display: flex;
+	flex-direction: column;
+}
+
+p.content {
+	margin-top: 4px;
+	opacity: 0.75;
+	white-space: pre-wrap;
+}
+
+h3, h4 {
+	margin-bottom: 4px;
+}
+
+h4 {
+	margin-top: 4px; 
+}
+
+input[type="text"], textarea {
+	border: none;
+	background: rgba(114,118,125,.3);
+	color: white;
+	padding: 6px 4px;
+	margin: 8px 0;
+	width: 30vw;
+	resize: vertical;
+}
+
+#preview {
+	display: flex;
+	flex-direction: row;
+	border-left: 3px solid rgba(0,0,0,0.15);
+	padding-left: 35px;
+	margin: 25px 0;
+}
+
+.message-author {
+	margin-top: .5em;
+}
+
+.embed {
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(46,48,54,.6);
+	border-left: 4px solid;
+	padding: 8px 10px;
+	margin: 8px 0;
+	color: hsla(0,0%,100%,.6);
+}
+
+.embed > div {
+	display: flex;
+	flex-direction: row;
+}
+
+.main {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+img.icon {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+
+img.image {
+	max-width: 400px;
+	max-height: 400px;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+.thumbnail {
+	max-width: 80px;
+}
+
+.thumbnail > img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.author {
+	display: flex;
+}
+
+.author > img {
+	margin-right: 4px;
+}
+
+a.title {
+	color: #0096cf;
+	margin-top: 4px;
+}
+
+p.description {
+	white-space: pre-wrap;
+	margin: 0;
+	margin-top: 4px;
+}
+
+.fields {
+	margin-top: 4px;
+}
+
+.field > p {
+	color: white;
+	margin: 4px 0;
+}
+
+.footer, .image {
+	margin-top: 8px;
+}
+
+.footer {
+	display: flex;
+}
+
+.footer > img {
+	margin-right: 4px;
+}
+
+.field {
+	margin-top: 4px;
+}
+
+div.field > input {
+	margin: 2px 0;
+}
+
+div#send {
+	margin: 3vh auto;
+}
+
+input#webhookURL {
+	border: none;
+	background: rgba(114,118,125,.3);
+	color: white;
+	padding: .5em .75em;
+	margin: 8px 0;
+	max-width: 65vw;
+	width: 100vw;
+	font-size: 1.2em;
+}
+
+div#send > button {
+	border: none;
+	color: white;
+	padding: .5em .75em;
+	margin: 8px 0;
+	font-size: 1.2em;
+}
+
+.loader {
+	border: 16px solid #000;
+	border-radius: 50%;
+	border-top: 16px solid #dbdbdb;
+	width: 120px;
+	height: 120px;
+	animation: spin 1s cubic-bezier(0.24, 0.5, 0.35, 0.96) infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
