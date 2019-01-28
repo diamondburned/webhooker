@@ -282,13 +282,15 @@ function sendembed() {
             "Content-Type": "application/json",
         },
 		body: JSON.stringify(preview.data.embed)
-	}).then(() => {
+	}).then((response) => {
 		if (response.ok) {
 			console.log("Success!")
 		} else {
 			alert("Couldn't send embed!")
 		}
 	}).catch(e => {
+		console.log(e)
+		console.log(preview.data.embed)
 		alert("Error!", e)
 	})
 } 
