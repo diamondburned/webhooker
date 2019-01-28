@@ -193,6 +193,13 @@ var controls = new Reef("#controls", {
 				Image URL
 				<input type="text" value="${e.image.url}" onchange="updateEmbed(this, 'image', 'url')">
 			</div>
+			<div class="control">
+				<h4>Footer</h4>
+				Text
+				<input type="text" value="${e.footer.text}" onchange="updateEmbed(this, 'footer', 'text')" />
+				Image URL
+				<input type="text" value="${e.footer.icon_url}" onchange="updateEmbed(this, 'footer', 'icon_url')" />
+			</div>
 		</div>
 		`
 	}
